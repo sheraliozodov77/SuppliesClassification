@@ -3,13 +3,10 @@ import streamlit as st
 import platform
 import pathlib
 import plotly.express as px
-# plat = platform.system()
-# if plat == 'Linux': pathlib.PosixPath = pathlib.WindowsPath
+plat = platform.system()
+if plat == 'Linux': pathlib.PosixPath = pathlib.WindowsPath
 
-
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
-
+    
 ## title
 st.title('Ishxona, musiqa va oshxona jihozlarini klassifikatsiya qiluvchi model')
 
